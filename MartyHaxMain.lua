@@ -10,7 +10,7 @@ executionsoundeffect:Play()
 if game.PlaceId == 8821374215 then
     loadstring(
         game:HttpGet(
-            "https://raw.githubusercontent.com/PixCarAtHome/bWFydHloYXg-/main/versions/martyhaxforsaiseiLITE.lua"
+            "https://raw.githubusercontent.com/PixCarAtHome/MartyHax/main/versions/martyhaxforsaiseiLITE.lua"
         )
     )()
 end
@@ -18,7 +18,7 @@ end
 if game.PlaceId == 10411692284 or 10411696938 then
     loadstring(
         game:HttpGet(
-            "https://raw.githubusercontent.com/PixCarAtHome/bWFydHloYXg-/main/versions/martyhaxlegacyforLOREGAME.lua"
+            "https://raw.githubusercontent.com/PixCarAtHome/MartyHax/main/versions/martyhaxlegacyforLOREGAME.lua"
         )
     )()
 end
