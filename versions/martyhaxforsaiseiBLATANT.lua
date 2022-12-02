@@ -136,7 +136,7 @@ local UI =
         Style = 3,
         SizeX = 300,
         SizeY = 400,
-        Theme = "Aqua"
+        Theme = "Jester"
     }
 )
 
