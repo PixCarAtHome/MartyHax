@@ -1,6 +1,7 @@
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/PixCarAtHome/MartyHax/main/UILib.lua"))()
 local runService = game:GetService("RunService")
 local plr = game.Players.LocalPlayer
+local plrName = plr.Character.Name
 local char = plr.Character
 
 local debounce = false
@@ -379,50 +380,9 @@ local WL_t_D =
 
 UtilityPage.Button(
     {
-        Text = "Invisiblity",
+        Text = "Invisiblity (Reset to turn off)",
         Callback = function()
-            local savedpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-            wait()
-            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-25.95, 84, 3537.55))
-            wait(.15)
-            local Seat = Instance.new("Seat", game.Workspace)
-            Seat.Anchored = false
-            Seat.CanCollide = false
-            Seat.Name = "invischair"
-            Seat.Transparency = 1
-            Seat.Position = Vector3.new(-25.95, 84, 3537.55)
-            local Weld = Instance.new("Weld", Seat)
-            Weld.Part0 = Seat
-            Weld.Part1 =
-                game.Players.LocalPlayer.Character:FindFirstChild("Torso") or
-                game.Players.LocalPlayer.Character.UpperTorso
-            wait()
-            Seat.CFrame = savedpos
-            game.StarterGui:SetCore(
-                "SendNotification",
-                {
-                    Title = "Invis On",
-                    Duration = 1,
-                    Text = ""
-                }
-            )
-        end
-    }
-)
-
-UtilityPage.Button(
-    {
-        Text = "Visbility",
-        Callback = function()
-            workspace:FindFirstChild("invischair"):Remove()
-            game.StarterGui:SetCore(
-                "SendNotification",
-                {
-                    Title = "Invis Off",
-                    Duration = 1,
-                    Text = ""
-                }
-            )
+            game:GetService("Workspace").Alive[plrName].HumanoidRootPart.RootJoint:Destroy()
         end
     }
 )
