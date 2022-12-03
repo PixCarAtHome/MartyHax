@@ -277,8 +277,8 @@ CombatPage.Slider(
         Callback = function(value)
             SpeedMult = value
         end,
-        Min = 1,
-        Max = 1000,
+        Min = 0.7,
+        Max = 2,
         Def = SpeedMult
     }
 )
