@@ -182,7 +182,7 @@ end
 
 stngs:addKeybind(
     "Toggle GUI",
-    Enum.KeyCode.BackSlash,
+    Enum.KeyCode.LeftBracket,
     function()
         venyx:toggle()
     end,
