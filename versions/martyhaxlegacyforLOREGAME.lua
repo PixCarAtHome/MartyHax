@@ -14,7 +14,7 @@ getgenv().Dodge = false
 local remoteFolder = game:GetService("ReplicatedStorage").Events
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
-local venyx = library.new("Martyhax V1 for Lore Game", 5013109572)
+local venyx = library.new("MartyHax V1 for Lore Game", 5013109572)
 
 -- themes
 local themes = {
